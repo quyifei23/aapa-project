@@ -71,3 +71,6 @@ logs/
 *.tmp
 *.bak
 *.cache
+
+# Ignore files
+scripts/push_to_github.sh
