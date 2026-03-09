@@ -1,0 +1,19 @@
+# AAPA Configuration
+
+data:
+  datasets:
+    - name: swe-bench
+      num_tasks: 10  # 先测试 10 个
+      path: data/raw/swe-bench
+  
+model:
+  name: meta-llama/Llama-2-7b-chat-hf
+  top_k: 100
+
+attention:
+  save_all_layers: false
+  compression: true
+
+output:
+  attention_logs: data/attention_logs
+  results: results
